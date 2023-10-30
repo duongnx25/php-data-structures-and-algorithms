@@ -1,0 +1,11 @@
+{
+    "name": "duongnx/data-structures-and-algorithms",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Duong Nguyen",
+            "email": "duong.nguyen@bliksund.com"
+        }
+    ],
+    "require": {}
+}
