@@ -7,5 +7,7 @@
             "email": "duong.nguyen@bliksund.com"
         }
     ],
-    "require": {}
+    "require": {
+        "symfony/var-dumper": "^5.4"
+    }
 }
