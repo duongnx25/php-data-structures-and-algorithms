@@ -7,6 +7,11 @@
             "email": "duong.nguyen@bliksund.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "": ""
+        }
+    },
     "require": {
         "symfony/var-dumper": "^5.4"
     }

@@ -3,10 +3,9 @@
 namespace DataStructures\LinkedList\Classes;
 
 use DataStructures\LinkedList\Classes\ListNode;
+use DataStructures\LinkedList\Classes\LinkedListInterface;
 
-require_once 'ListNode.php';
-
-class SinglyLinkedList
+class SinglyLinkedList implements LinkedListInterface
 {
     public ?ListNode $head = null;
 

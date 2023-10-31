@@ -1,12 +1,8 @@
 <?php
 
-// use DataStructures\LinkedList\Classes\ListNode;
-// use Symfony\Component\VarDumper\VarDumper;
 use DataStructures\LinkedList\Classes\SinglyLinkedList;
 
 require_once '../../../vendor/autoload.php';
-require_once '../Classes/ListNode.php';
-require_once '../Classes/SinglyLinkedList.php';
 
 $singlyLinkedList = new SinglyLinkedList();
 $singlyLinkedList->insertAtEnd(1);
