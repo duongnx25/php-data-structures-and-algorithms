@@ -3,11 +3,11 @@
 namespace DataStructures\LinkedList\Classes;
 
 use DataStructures\LinkedList\Classes\ListNode;
-use DataStructures\LinkedList\Classes\LinkedListInterface;
+use DataStructures\LinkedList\Classes\Interfaces\LinkedListInterface;
 
 class SinglyLinkedList implements LinkedListInterface
 {
-    public ?ListNode $head = null;
+    private ?ListNode $head = null;
 
     public function insertAtEnd($value)
     {
@@ -27,7 +27,7 @@ class SinglyLinkedList implements LinkedListInterface
     {
         $current = $this->head;
 
-        while ($current != NULL) {
+        while ($current != null) {
             dump($current->value);
             $current = $current->next;
         }

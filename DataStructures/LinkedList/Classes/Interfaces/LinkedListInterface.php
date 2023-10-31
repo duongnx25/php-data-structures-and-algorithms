@@ -1,6 +1,6 @@
 <?php
 
-namespace DataStructures\LinkedList\Classes;
+namespace DataStructures\LinkedList\Classes\Interfaces;
 
 interface LinkedListInterface
 {
@@ -12,7 +12,7 @@ interface LinkedListInterface
 
     // public function deleteAtPosition();
 
-    // public function readList();
+    public function readList();
 
     // public function getSize();
 
