@@ -7,12 +7,12 @@ use DataStructures\LinkedList\Classes\DoublyLinkedList;
 use DataStructures\LinkedList\Classes\CircularLinkedList;
 
 
-$singlyLinkedList = new SinglyLinkedList();
-$singlyLinkedList->insertAtEnd(1);
-$singlyLinkedList->insertAtEnd(2);
-$singlyLinkedList->insertAtEnd(3);
-$singlyLinkedList->insertAtEnd(4);
-$singlyLinkedList->readList();
+// $singlyLinkedList = new SinglyLinkedList();
+// $singlyLinkedList->insertAtEnd(1);
+// $singlyLinkedList->insertAtEnd(2);
+// $singlyLinkedList->insertAtEnd(3);
+// $singlyLinkedList->insertAtEnd(4);
+// $singlyLinkedList->readList();
 
 
 // $dll = new DoublyLinkedList();
@@ -20,10 +20,14 @@ $singlyLinkedList->readList();
 // $dll->insertAtStart(3);
 // $dll->insertAtStart(2);
 // $dll->insertAtStart(1);
+// $dll->insertAtEnd(1);
+// $dll->insertAtEnd(2);
+// $dll->insertAtEnd(3);
+// $dll->insertAtEnd(4);
 // $dll->readList();
 
-// $circularLinkedList = new CircularLinkedList();
-// $circularLinkedList->insertAtEnd(1);
-// $circularLinkedList->insertAtEnd(2);
-// $circularLinkedList->insertAtEnd(3);
-// $circularLinkedList->readList();
+$circularLinkedList = new CircularLinkedList();
+$circularLinkedList->insertAtEnd(1);
+$circularLinkedList->insertAtEnd(2);
+$circularLinkedList->insertAtEnd(3);
+$circularLinkedList->readList();

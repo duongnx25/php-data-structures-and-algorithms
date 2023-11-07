@@ -12,29 +12,28 @@ class CircularLinkedList implements LinkedListInterface
     public function insertAtEnd($value)
     {
         $node = new ListNode($value);
+
         if ($this->head === null) {
             $this->head = $node;
             $this->tail = $node;
             $this->head->next = $node;
-            $this->head->prev = $node;
+            $this->tail->prev = $node;
             return;
         }
         $node->next = $this->head;
         $node->prev = $this->tail;
-        $this->tail->next = $node;
         $this->head->prev = $node;
+        $this->tail->next = $node;
         $this->tail = $node;
     }
 
     public function readList()
     {
         $current = $this->head;
-        dump($this);
-        die;
 
-        while ($current->next !== null) {
-            // dump($current->value);
+        do {
+            dump($current->value);
             $current = $current->next;
-        }
+        } while ($current !== $this->head);
     }
 }
