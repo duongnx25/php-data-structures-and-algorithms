@@ -4,6 +4,7 @@ require_once '../../../vendor/autoload.php';
 
 use DataStructures\LinkedList\Classes\SinglyLinkedList;
 use DataStructures\LinkedList\Classes\DoublyLinkedList;
+use DataStructures\LinkedList\Classes\CircularLinkedList;
 
 
 $singlyLinkedList = new SinglyLinkedList();
@@ -20,3 +21,9 @@ $singlyLinkedList->readList();
 // $dll->insertAtStart(2);
 // $dll->insertAtStart(1);
 // $dll->readList();
+
+// $circularLinkedList = new CircularLinkedList();
+// $circularLinkedList->insertAtEnd(1);
+// $circularLinkedList->insertAtEnd(2);
+// $circularLinkedList->insertAtEnd(3);
+// $circularLinkedList->readList();

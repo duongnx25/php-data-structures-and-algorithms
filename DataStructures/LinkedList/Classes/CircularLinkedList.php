@@ -2,10 +2,9 @@
 
 namespace DataStructures\LinkedList\Classes;
 
-use DataStructures\LinkedList\Classes\ListNode;
 use DataStructures\LinkedList\Classes\Interfaces\LinkedListInterface;
 
-class SinglyLinkedList implements LinkedListInterface
+class CircularLinkedList implements LinkedListInterface
 {
     private ?ListNode $head = null;
     private ?ListNode $tail = null;
@@ -13,14 +12,17 @@ class SinglyLinkedList implements LinkedListInterface
     public function insertAtEnd($value)
     {
         $node = new ListNode($value);
-
         if ($this->head === null) {
             $this->head = $node;
             $this->tail = $node;
+            $this->head->next = $node;
+            $this->head->prev = $node;
             return;
         }
-
+        $node->next = $this->head;
+        $node->prev = $this->tail;
         $this->tail->next = $node;
+        $this->head->prev = $node;
         $this->tail = $node;
     }
 
@@ -30,10 +32,9 @@ class SinglyLinkedList implements LinkedListInterface
         dump($this);
         die;
 
-        while ($current != null) {
-            dump($current->value);
+        while ($current->next !== null) {
+            // dump($current->value);
             $current = $current->next;
         }
-
     }
 }
