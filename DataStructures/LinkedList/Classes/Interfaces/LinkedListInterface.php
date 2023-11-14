@@ -6,7 +6,7 @@ interface LinkedListInterface
 {
     public function insertAtEnd($value);
 
-    // public function insertAtStart();
+    public function insertAtStart($value);
 
     // public function insertAtPosition();
 
