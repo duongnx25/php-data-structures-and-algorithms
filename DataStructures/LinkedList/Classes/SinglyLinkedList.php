@@ -24,6 +24,19 @@ class SinglyLinkedList implements LinkedListInterface
         $this->tail = $node;
     }
 
+    public function insertAtStart($value)
+    {
+        $node = new ListNode($value);
+
+        if ($this->head === null) {
+            $this->head = $node;
+            $this->tail = $node;
+            return;
+        }
+        $node->next = $this->head;
+        $this->head = $node;
+    }
+
     public function readList()
     {
         $current = $this->head;
