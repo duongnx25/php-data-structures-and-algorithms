@@ -6,17 +6,18 @@ use DataStructures\LinkedList\Classes\SinglyLinkedList;
 use DataStructures\LinkedList\Classes\DoublyLinkedList;
 use DataStructures\LinkedList\Classes\CircularLinkedList;
 
-
-// $singlyLinkedList = new SinglyLinkedList();
-// $singlyLinkedList->insertAtEnd(1);
-// $singlyLinkedList->insertAtEnd(2);
-// $singlyLinkedList->insertAtEnd(3);
-// $singlyLinkedList->insertAtEnd(4);
-// $singlyLinkedList->insertAtEnd(5);
+$singlyLinkedList = new SinglyLinkedList();
+$singlyLinkedList->insertAtEnd(1);
+$singlyLinkedList->insertAtEnd(2);
+$singlyLinkedList->insertAtEnd(3);
+$singlyLinkedList->insertAtEnd(4);
+$singlyLinkedList->insertAtEnd(5);
 // $singlyLinkedList->insertAtStart(4);
 // $singlyLinkedList->insertAtStart(3);
 // $singlyLinkedList->insertAtStart(2);
 // $singlyLinkedList->insertAtStart(1);
+$found = $singlyLinkedList->contains(7);
+dump($found);
 // $singlyLinkedList->readList();
 
 
@@ -31,14 +32,14 @@ use DataStructures\LinkedList\Classes\CircularLinkedList;
 // $dll->insertAtEnd(4);
 // $dll->readList();
 
-$circularLinkedList = new CircularLinkedList();
-$circularLinkedList->insertAtEnd(1);
-$circularLinkedList->insertAtEnd(2);
-$circularLinkedList->insertAtEnd(3);
-$circularLinkedList->insertAtEnd(4);
+// $circularLinkedList = new CircularLinkedList();
+// $circularLinkedList->insertAtEnd(1);
+// $circularLinkedList->insertAtEnd(2);
+// $circularLinkedList->insertAtEnd(3);
+// $circularLinkedList->insertAtEnd(4);
 
 // $circularLinkedList->insertAtStart(4);
 // $circularLinkedList->insertAtStart(3);
 // $circularLinkedList->insertAtStart(2);
 // $circularLinkedList->insertAtStart(1);
-$circularLinkedList->readList();
+// $circularLinkedList->readList();

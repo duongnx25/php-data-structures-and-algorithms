@@ -9,6 +9,14 @@ class CircularLinkedList implements LinkedListInterface
     private ?ListNode $head = null;
     private ?ListNode $tail = null;
 
+    public function contains($value)
+    {
+    }
+
+    public function find($value)
+    {
+    }
+
     public function insertAtEnd($value)
     {
         $node = new ListNode($value);

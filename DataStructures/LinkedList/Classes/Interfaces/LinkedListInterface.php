@@ -4,6 +4,10 @@ namespace DataStructures\LinkedList\Classes\Interfaces;
 
 interface LinkedListInterface
 {
+    public function find($value);
+
+    public function contains($value);
+
     public function insertAtEnd($value);
 
     public function insertAtStart($value);
