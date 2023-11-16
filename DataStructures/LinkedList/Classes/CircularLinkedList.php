@@ -11,10 +11,30 @@ class CircularLinkedList implements LinkedListInterface
 
     public function contains($value)
     {
+        $current = $this->head;
+
+        do {
+            if ($current->value === $value) {
+                return true;
+            }
+            $current = $current->next;
+        } while ($current !== $this->head);
+
+        return false;
     }
 
-    public function find($value)
+    public function find($value): ?ListNode
     {
+        $current = $this->head;
+
+        do {
+            if ($current->value === $value) {
+                return $current;
+            }
+            $current = $current->next;
+        } while ($current !== $this->head);
+
+        return null;
     }
 
     public function insertAtEnd($value)

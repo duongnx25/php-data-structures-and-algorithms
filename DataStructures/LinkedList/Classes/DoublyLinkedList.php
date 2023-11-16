@@ -10,12 +10,32 @@ class DoublyLinkedList implements LinkedListInterface
     private ?ListNode $head = null;
     private ?ListNode $tail = null;
 
-    public function contains($value)
+    public function contains($value): bool
     {
+        $current = $this->head;
+
+        while ($current !== null) {
+            if ($current->value === $value) {
+                return true;
+            }
+            $current = $current->next;
+        }
+
+        return false;
     }
 
-    public function find($value)
+    public function find($value): ?ListNode
     {
+        $current = $this->head;
+
+        while ($current !== null) {
+            if ($current->value === $value) {
+                return $current;
+            }
+            $current = $current->next;
+        }
+
+        return null;
     }
 
     public function insertAtEnd($value)
